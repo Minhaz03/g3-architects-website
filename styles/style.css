@@ -6,3 +6,85 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* Shared style */
+.display-flex{
+    display: flex;
+}
+
+.btn-primary{
+    background-color: rgb(255, 144, 14);
+    color: white;
+    border-radius: 8px;
+    padding: 20px 24px;
+    font-size: 1.25rem;  /* pixel ke 16 diye bhag korle rem ashbe */
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+/* dark-02 */
+.text-gray{
+    color: rgb(66, 66, 66);
+}
+
+/* dark-03 */
+.text-light-gray{
+    color: rgb(114, 114, 114);
+}
+
+.bg-color{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+/* Header style */
+
+/* Navbar style */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Banner related styles */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.banner-image{
+    width: 100%;
+}
+
+/* responsive media querry */
+@media screen and (max-width: 576px) {
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
+    
+}
